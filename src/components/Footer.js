@@ -13,7 +13,7 @@ export default function Footer() {
             </div>
             <div className="mt-4 md:mt-0">
               <p className="text-sm text-gray-500">
-                Powered by Ethereum Sepolia & Next.js
+                Developed by Junaid Ikram
               </p>
             </div>
           </div>
