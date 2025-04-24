@@ -13,6 +13,8 @@ export default function Navbar() {
     { name: 'Upload Document', href: '/upload' },
     { name: 'Verify Document', href: '/verify' },
     { name: 'My Documents', href: '/my-documents' },
+    { name: 'Share Documents', href: '/share-document' },
+    { name: 'Transfer Ownership', href: '/transfer-ownership' },
   ];
 
   const toggleMenu = () => {
@@ -57,7 +59,7 @@ export default function Navbar() {
             <div className="ml-4 flex items-center md:ml-6">
               {error && <p className="text-sm text-red-500 mr-4">{error}</p>}
               
-              {network && network.chainId !== 11155111 && (
+              {network && network.chainId != 11155111 && (
                 <p className="text-sm text-amber-500 mr-4">Please connect to Sepolia network</p>
               )}
               
